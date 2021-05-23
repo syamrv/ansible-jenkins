@@ -1,0 +1,18 @@
+---
+# vars file for jenkins
+java: "java-1.8.0"
+javaU: "openjdk-8-jre-headless"
+jenkins_repo_urlU: "deb https://pkg.jenkins.io/debian-stable binary/"
+softwaresU:
+ java:
+    name: "{{ javaU }}"
+ jenkins:
+    name: "jenkins"
+
+softwares:
+ java:
+    name: "{{ java }}"
+ jenkins:
+    name: "jenkins"
+jenkins_key_rpmU: "https://pkg.jenkins.io/debian-stable/jenkins.io.key"
+jenkins_key_rpm: "https://pkg.jenkins.io/redhat-stable/jenkins.io.key"
